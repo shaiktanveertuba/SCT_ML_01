@@ -1,46 +1,113 @@
-##Task 01 — House Price Prediction Using Linear Regression
-##Objective:
-Build a Linear Regression model to predict house prices based on square footage, 
-number of bedrooms, and number of bathrooms.
+# 🚀 Machine Learning Projects Collection
 
-What is Linear Regression?
-Linear Regression is a supervised machine learning algorithm that establishes a relationship 
-between input features and a continuous output variable by finding the best-fit line. It learns coefficients 
-for each feature that minimize prediction error.
+## 📌 Overview
+This repository contains multiple machine learning and computer vision projects demonstrating real-world applications of data analysis, model building, and evaluation.
 
-formula:
-Price = (w1 × sqft) + (w2 × bedrooms) + (w3 × bathrooms) + bias
+---
 
-Dataset
-1000 house records with features: sqft_living, bedrooms, bathrooms, and price as the target variable.
-Steps Followed
-1. Data Preparation — Loaded and explored dataset using descriptive statistics.
-2. Feature Selection — Selected sqft_living, bedrooms, bathrooms as inputs.
-3. Train-Test Split — 80% training, 20% testing using train_test_split.
-4. Model Training — Trained LinearRegression from scikit-learn.
-5. Evaluation — Measured MAE, RMSE, and R² on test data.
+## 📊 Task 01 — House Price Prediction (Linear Regression)
 
-Results
-Metric       Value
-MAE          $15,741 
-RMSE         $20,027 
-R²Score      0.9152 (91.52%)
+### 🎯 Objective
+Predict house prices using:
+- Square footage
+- Number of bedrooms
+- Number of bathrooms
 
-Model Coefficients
-Feature          Impact
-Square Footage   +$49.68 per sqft
-Bedrooms         +$14,688 per bedroom
-Bathrooms        +$11,836 per bathroom
-Base Price       $54,043
+### 🧠 Model
+Linear Regression model to establish relationship between features and price.
 
-Visualizations:
-Actual vs Predicted prices scatter plot
-Residual plot to check error distribution
-Price vs Square Footage colored by bedrooms
-Feature coefficients bar chart
+### 📈 Results
+- MAE: $15,741  
+- RMSE: $20,027  
+- R² Score: **91.52%**
 
-Libraries Used
-pandas, numpy, scikit-learn, matplotlib, seaborn
+### 💡 Insight
+Larger houses with more rooms tend to have higher prices.
 
-Conclusion
-The model achieved an R² of 91.52%, explaining over 91% of variance in house prices. Coefficients align with real-world intuition — larger homes with more rooms cost more. This task demonstrates the complete ML pipeline from data prep to evaluation.
+---
+
+## 🧩 Task 02 — Customer Segmentation (K-Means)
+
+### 🎯 Objective
+Segment customers based on:
+- Annual Income
+- Spending Score
+
+### 📈 Results
+- Optimal Clusters: **2**
+- Silhouette Score: **0.476**
+
+### 💡 Insight
+- High-income high spenders
+- Low-income low spenders
+
+---
+
+## 🐶🐱 Task 03 — Cat vs Dog Classification (SVM)
+
+### 🎯 Objective
+Classify images as cats or dogs
+
+### ⚙️ Approach
+- Image preprocessing
+- PCA for dimensionality reduction
+- SVM with RBF kernel
+
+### 📈 Results
+- Accuracy: **70–75%**
+
+### 💡 Insight
+PCA reduces computation while maintaining accuracy.
+
+---
+
+## ✋ Task 04 — Hand Gesture Recognition
+
+### 🎯 Objective
+Detect and classify hand gestures in real time
+
+### ⚙️ Approach
+- MediaPipe for landmark detection
+- Random Forest for classification
+
+### 📈 Results
+- Accuracy: **~95%+**
+- 6 gesture classes
+
+### 💡 Insight
+Landmark-based models are fast and efficient for real-time applications.
+
+---
+
+## 🛠️ Tech Stack
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
+- OpenCV
+- MediaPipe
+- Matplotlib
+- Seaborn
+
+---
+
+## 📊 Visualizations
+- Regression plots
+- Cluster graphs
+- Confusion matrix
+- PCA variance plots
+- Feature importance charts
+
+---
+
+## 🎯 Conclusion
+This repository demonstrates:
+- Supervised Learning
+- Unsupervised Learning
+- Computer Vision
+- Real-time ML systems
+
+---
+
+## 👤 Author
+SK.Tuba Tanveer
